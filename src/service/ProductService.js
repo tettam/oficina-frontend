@@ -2,7 +2,7 @@ import axios from "axios"
 
 export class ProductService {
 
-  url = 'http://localhost:8080/products'
+  url = `https://oficina-backend-production.up.railway.app/products`;
 
   findAll() {
     return axios.get(`${this.url}`);

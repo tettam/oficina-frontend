@@ -1,9 +1,8 @@
 import axios from "axios";
 
-
 export class BudgetService {
 
-  url = 'http://localhost:8080/budgets'
+  url = `https://oficina-backend-production.up.railway.app/budgets`;
 
   findAll(){
     return axios.get(`${this.url}`);

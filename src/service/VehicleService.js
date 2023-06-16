@@ -1,8 +1,7 @@
 import axios from "axios"
 
 export class VehicleService {
-  
-  url = 'http://localhost:8080/vehicles'
+  url = `https://oficina-backend-production.up.railway.app/vehicles`;
 
   findAll(){
     return axios.get(`${this.url}`);

@@ -4,7 +4,6 @@ import Footer from "./components/Footer"
 import MenuBar from "./components/Menubar"
 import './App.css';
 
-
 function App() {
   return (
     

@@ -2,8 +2,8 @@ import axios from "axios";
 
 
 export class ClientService {
-
-  url = 'http://localhost:8080/clients'
+  
+  url = `https://oficina-backend-production.up.railway.app/clients`;
 
   findAll(){
     return axios.get(`${this.url}`);
