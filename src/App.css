@@ -1,0 +1,23 @@
+.main {
+  position: absolute;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  align-items: start;
+}
+.content {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+@media (max-width:810px){
+  .menu {
+    display: none;
+  }
+}
