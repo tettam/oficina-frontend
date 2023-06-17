@@ -2,7 +2,7 @@ import axios from "axios";
 
 export class BudgetService {
 
-  url = `https://oficina-backend-production.up.railway.app/budgets`;
+  url = `${import.meta.env.VITE_APP_API}/budgets`;
 
   findAll(){
     return axios.get(`${this.url}`);

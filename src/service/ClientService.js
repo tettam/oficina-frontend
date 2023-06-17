@@ -1,9 +1,8 @@
 import axios from "axios";
 
-
 export class ClientService {
   
-  url = `https://oficina-backend-production.up.railway.app/clients`;
+  url = `${import.meta.env.VITE_APP_API}/clients`;
 
   findAll(){
     return axios.get(`${this.url}`);

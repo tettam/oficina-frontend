@@ -2,7 +2,7 @@ import axios from "axios"
 
 export class ProductService {
 
-  url = `https://oficina-backend-production.up.railway.app/products`;
+  url = `${import.meta.env.VITE_APP_API}/products`;
 
   findAll() {
     return axios.get(`${this.url}`);

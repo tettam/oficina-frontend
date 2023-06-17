@@ -183,7 +183,7 @@ const Budget = () => {
   const actionBodyTemplate = (rowData) => {
     return (
       <>
-        <C.StyledButtonsActions style={{ backgroundColor: '#4169e1' }} onClick={() => editObject(rowData)}>
+        <C.StyledButtonsActions style={{ backgroundColor: '#4169e1', marginBottom: '10px' }} onClick={() => editObject(rowData)}>
         <i className="pi pi-pencil"></i>
         </C.StyledButtonsActions>
         <C.StyledButtonsActions style={{ backgroundColor: 'red' }} onClick={() => deleteObject(rowData)}>

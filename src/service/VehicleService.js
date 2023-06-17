@@ -1,7 +1,8 @@
 import axios from "axios"
 
 export class VehicleService {
-  url = `https://oficina-backend-production.up.railway.app/vehicles`;
+
+  url = `${import.meta.env.VITE_APP_API}/vehicles`;
 
   findAll(){
     return axios.get(`${this.url}`);
